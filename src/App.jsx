@@ -19,7 +19,7 @@ function App() {
           ({ path, element }, key) =>
             element && <Route key={key} exact path={path} element={element} />
         )}
-        <Route path="*" element={<Navigate to="/ingreso" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
   );
