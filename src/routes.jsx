@@ -8,12 +8,12 @@ export const routes = [
   },
   {
     name: "Registro Washito",
-    path: "/registro-Washito",
+    path: "/registro-washito",
     element: <Profile />,
   },
   {
     name: "Como lavar",
-    path: "/Como-lavar",
+    path: "/como-lavar",
     element: <ComoLavar/>,
   },
 ];
