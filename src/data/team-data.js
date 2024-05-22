@@ -38,7 +38,7 @@ export const teamData = [
     ],
   },
   {
-    img: "/img/team-3.jpg",
+    img: "/img/sholem.jpeg",
     name: "Sholem",
     position: "UI/UX Designer",
     socials: [

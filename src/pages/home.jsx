@@ -10,7 +10,7 @@ import {
   Textarea,
   Checkbox,
 } from "@material-tailwind/react";
-import { FingerPrintIcon, UsersIcon } from "@heroicons/react/24/solid";
+import { FingerPrintIcon, UsersIcon, RocketLaunchIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
@@ -43,13 +43,14 @@ export function Home() {
         </div>
       </div>
       <section className="bg-white px-4 pb-20 pt-4"> {/* -mt-32 removed from here and added to 47:000 */}
-        <div className="container mx-auto">
-          <div className="grid -mt-32  grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
-            {featuresData.map(({ color, title, icon, link }) => (
+        <div className="container mx-auto" style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+          <div className="grid -mt-32  grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-1" style={{maxWidth: '500px', width: '95%'}}>
+            {featuresData.map(({ color, title, icon, link, text }) => (
               <FeatureCard
                 key={title}
                 color={color}
                 title={title}
+                text={text}
                 icon={React.createElement(icon, {
                   className: "w-5 h-5 text-white",
                 })}
@@ -60,67 +61,66 @@ export function Home() {
           <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
-                <FingerPrintIcon className="h-8 w-8 text-white " />
+                <RocketLaunchIcon className="h-8 w-8 text-white " />
               </div>
               <Typography
                 variant="h3"
                 className="mb-3 font-bold"
                 color="blue-gray"
               >
-                Working with us is a pleasure
+                Descubre Quiénes Somos y Nuestros Valores
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
-                Don't let your uses guess by attaching tooltips and popoves to
-                any element. Just make sure you enable them first via
-                JavaScript.
+                En Washito, ofrecemos un servicio de lavado de autos único, 
+                donde vamos directamente al lugar de estacionamiento del cliente para brindar comodidad y conveniencia. 
+                Nuestro compromiso con la excelencia y la satisfacción del cliente es primordial en todo lo que hacemos.
                 <br />
                 <br />
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. Just make sure you enable them first via JavaScript.
+                Nuestros valores se basan en la integridad, la calidad y el servicio excepcional. 
+                Nos esforzamos por superar las expectativas de nuestros clientes en cada lavado, 
+                asegurando que cada vehículo reciba un tratamiento meticuloso y un resultado impecable.
+                <br />
+                <br />
+                Descubre la diferencia con Washito y únete a nuestra comunidad de clientes 
+                satisfechos que confían en nosotros para mantener sus vehículos en óptimas condiciones, 
+                sin importar dónde estén estacionados.
               </Typography>
-              <Button variant="filled">read more</Button>
+              {/* <Button variant="filled">read more</Button> */}
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
               <Card className="shadow-lg border shadow-gray-500/10 rounded-lg">
                 <CardHeader floated={false} className="relative h-56">
-                  {/* <img
-                    alt="Card Image"
-                    src="/img/teamwork.png"
-                    className="h-full w-full"
-                  /> */}
-
-                <Carousel className="rounded-xl">
+                <Carousel loop={true} className="rounded-xl">
                     <img
-                      src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-                      alt="image 1"
+                      src="https://images.unsplash.com/photo-1607860108358-47c0441e7adb?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt="car wash 1"
                       className="h-full w-full object-cover"
                     />
                     <img
-                      src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-                      alt="image 2"
+                      src="https://images.unsplash.com/photo-1565381169814-50def2eb0387?q=80&w=2934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA"
+                      alt="car wash 2"
                       className="h-full w-full object-cover"
                     />
                     <img
-                      src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-                      alt="image 3"
+                      src="https://images.unsplash.com/photo-1527581849771-416a9d62308e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt="car wash 3"
                       className="h-full w-full object-cover"
                     />
                 </Carousel>
                 </CardHeader>
                 <CardBody>
-                  <Typography variant="small" color="blue-gray" className="font-normal">Enterprise</Typography>
+                  <Typography variant="small" color="blue-gray" className="font-normal">Galoria</Typography>
                   <Typography
                     variant="h5"
                     color="blue-gray"
                     className="mb-3 mt-2 font-bold"
                   >
-                    Top Notch Services
+                  Fotos de Washito
                   </Typography>
                   <Typography className="font-normal text-blue-gray-500">
-                    The Arctic Ocean freezes every winter and much of the
+                    {/* The Arctic Ocean freezes every winter and much of the
                     sea-ice then thaws every summer, and that process will
-                    continue whatever happens.
+                    continue whatever happens. */}
                   </Typography>
                 </CardBody>
               </Card>
@@ -129,11 +129,14 @@ export function Home() {
         </div>
       </section>
       <section className="px-4 pt-20 pb-48">
-        <div className="container mx-auto">
-          <PageTitle section="Our Team" heading="Here are our heroes">
+        <div className="container mx-auto text-white/95">
+          <PageTitle section="Nuestro equipo">
+            <h1 className="text-white/70 text-3xl mb-4">Aquí están nuestros fundadores</h1>
+            <span className="text-white/70">
             According to the National Oceanic and Atmospheric Administration,
             Ted, Scambos, NSIDClead scentist, puts the potentially record
             maximum.
+            </span>
           </PageTitle>
           <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-3">
             {teamData.map(({ img, name, position, socials }) => (

@@ -1,21 +1,21 @@
-import { Home, Profile, ComoLavar, SignUp } from "@/pages";
+import { Home, Profile, Contacto, SignUp } from "@/pages";
 
 export const routes = [
   {
-    name: "Ingreso",
+    //name: "Ingreso",
     path: "/",
     element: <Home />,
   },
-  {
-    name: "Registro Washito",
-    path: "/registro-washito",
-    element: <Profile />,
-  },
-  {
-    name: "Como lavar",
-    path: "/como-lavar",
-    element: <ComoLavar/>,
-  },
+  // {
+  //   name: "Registro Washito",
+  //   path: "/registro-washito",
+  //   element: <Profile />,
+  // },
+  // {
+  //   name: "Contacto",
+  //   path: "/contacto",
+  //   element: <Contacto/>,
+  // },
 ];
 
 export default routes;

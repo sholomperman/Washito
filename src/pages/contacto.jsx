@@ -7,7 +7,7 @@ import {
 import { Link } from "react-router-dom";
 
 
-export function ComoLavar() {
+export function Contacto() {
   return (
     <section className="m-8 flex gap-4">
       <div className="w-full lg:w-3/5 mt-24">
@@ -122,4 +122,4 @@ export function ComoLavar() {
   );
 }
 
-export default ComoLavar;
+export default Contacto;

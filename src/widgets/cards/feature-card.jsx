@@ -8,7 +8,7 @@ import {
 } from "@material-tailwind/react";
 
 
-export function FeatureCard({ color, icon, title, link }) {
+export function FeatureCard({ color, icon, title, link, text }) {
   return (
     <Card className="rounded-lg shadow-lg shadow-gray-500/10">
       <CardBody className="px-8 text-center">
@@ -23,7 +23,9 @@ export function FeatureCard({ color, icon, title, link }) {
         <Typography variant="h5" className="mb-8" color="blue-gray">
           {title}
         </Typography>
-        
+        <Typography variant="p" className="mb-8" color="blue-gray">
+          {text}
+        </Typography>
         <a target="_blank" rel="noreferrer noopener" href={link}><Button size="lg">Agregame al Chat</Button></a>
       </CardBody>
     </Card>

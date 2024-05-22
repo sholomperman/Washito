@@ -75,12 +75,9 @@ export function Navbar({ brandName, routes, action }) {
             target="_blank"
           >
             <Button variant="text" size="sm" color="white" fullWidth>
-              pro version
+            Ir a Chat de Washitos
             </Button>
           </a>
-          {React.cloneElement(action, {
-            className: "hidden lg:inline-block",
-          })}
         </div>
         <IconButton
           variant="text"
@@ -97,23 +94,24 @@ export function Navbar({ brandName, routes, action }) {
         </IconButton>
       </div>
       <MobileNav
-        className="rounded-xl bg-white px-4 pt-2 pb-4 text-blue-gray-900"
+        className="rounded-xl bg-white px-4 pt-0 pb-3 text-blue-gray-900"
         open={openNav}
       >
-        <div className="container mx-auto">
+         <div className="container mx-auto ">
           {navList}
+          
           <a
             href="https://www.material-tailwind.com/blocks/react?ref=mtkr"
             target="_blank"
-            className="mb-2 block"
+            className="m-2 block"
           >
             <Button variant="text" size="sm" fullWidth>
-              pro version
+            Ir a Chat de Washitos
             </Button>
           </a>
-          {React.cloneElement(action, {
+          {/* {React.cloneElement(action, {
             className: "w-full block",
-          })}
+          })} */}
         </div>
       </MobileNav>
     </MTNavbar>
@@ -121,17 +119,17 @@ export function Navbar({ brandName, routes, action }) {
 }
 
 Navbar.defaultProps = {
-  brandName: "Material Tailwind React",
-  action: (
-    <a
-      href="https://www.creative-tim.com/product/material-tailwind-kit-react"
-      target="_blank"
-    >
-      <Button variant="gradient" size="sm" fullWidth>
-        free download
-      </Button>
-    </a>
-  ),
+  brandName: <img width={50} src="/img/washito-logo.png"/>,
+  // action: (
+  //   <a
+  //     href="https://www.creative-tim.com/product/material-tailwind-kit-react"
+  //     target="_blank"
+  //   >
+  //     <Button variant="gradient" size="sm" fullWidth>
+  //       free download
+  //     </Button>
+  //   </a>
+  // ),
 };
 
 Navbar.propTypes = {
