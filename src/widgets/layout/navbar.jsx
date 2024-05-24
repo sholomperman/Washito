@@ -10,6 +10,7 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
+export const whatsAppUrl = 'https://chat.whatsapp.com/BfChyyd6odkEvfH1YDSGjI'
 export function Navbar({ brandName, routes, action }) {
   const [openNav, setOpenNav] = React.useState(false);
 
@@ -71,7 +72,7 @@ export function Navbar({ brandName, routes, action }) {
         <div className="hidden lg:block">{navList}</div>
         <div className="hidden gap-2 lg:flex">
           <a
-            href="https://www.material-tailwind.com/blocks?ref=mtkr"
+            href={whatsAppUrl}
             target="_blank"
           >
             <Button variant="text" size="sm" color="white" fullWidth>
@@ -94,14 +95,14 @@ export function Navbar({ brandName, routes, action }) {
         </IconButton>
       </div>
       <MobileNav
-        className="rounded-xl bg-white px-4 pt-0 pb-3 text-blue-gray-900"
+        className="rounded-xl bg-white px-4 pt-4 pb-4 text-blue-gray-900 flex items-center justify-center"
         open={openNav}
       >
-         <div className="container mx-auto ">
-          {navList}
+         <div className="container mx-auto">
+          {/* {navList} */}
           
           <a
-            href="https://www.material-tailwind.com/blocks/react?ref=mtkr"
+            href={whatsAppUrl}
             target="_blank"
             className="m-2 block"
           >

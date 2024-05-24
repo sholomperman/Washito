@@ -1,8 +1,3 @@
-import {
-  BriefcaseIcon,
-  ChartBarIcon,
-  PlayIcon,
-} from "@heroicons/react/24/solid";
 
 export const servicesData = [
   {
@@ -14,8 +9,12 @@ export const servicesData = [
     price: "12,990",
   },
   {
-    title: "Cañoneta / auto XL",
-    price: "13,990",
+    title: "SUV L / Auto L",
+    price: "15,990",
+  },
+  {
+    title: "Extra Grande",
+    price: "17,990",
   },
 ];
 

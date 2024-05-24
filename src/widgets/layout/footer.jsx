@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { Typography, IconButton } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
+import { whatsAppUrl } from '@/widgets/layout';
 
 const year = new Date().getFullYear();
 
@@ -110,7 +111,7 @@ Footer.defaultProps = {
       name: "Otros recursos",
       items: [
         { name: "washitocar@gmail.com", path: "mailto:washitocar@gmail.com" },
-        { name: "Chat de Washitos", path: "#" }
+        { name: "Chat de Washitos", path: whatsAppUrl }
       ],
     },
     // {
