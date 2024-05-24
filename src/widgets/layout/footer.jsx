@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Typography, IconButton } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const year = new Date().getFullYear();
 
@@ -79,79 +80,67 @@ export function Footer({ title, description, socials, menus, copyright }) {
 }
 
 Footer.defaultProps = {
-  title: "Material Tailwind",
+  title: "Washito",
   description:
-    "Easy to use React components for Tailwind CSS and Material Design.",
+    "Una nueva forma revolucionaria de lavar tu coche donde no necesitas esperar y puedes hacerlo a tu conveniencia.",
   socials: [
-    {
-      color: "gray",
-      name: "twitter",
-      path: "https://www.twitter.com/creativetim",
-    },
-    {
-      color: "gray",
-      name: "youtube",
-      path: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
-    },
+    // {
+    //   color: "gray",
+    //   name: "twitter",
+    //   path: "https://www.twitter.com/creativetim",
+    // },
+    // {
+    //   color: "gray",
+    //   name: "youtube",
+    //   path: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
+    // },
     {
       color: "gray",
       name: "instagram",
-      path: "https://www.instagram.com/creativetimofficial/",
+      path: "https://www.instagram.com/washitocar/",
     },
-    {
-      color: "black",
-      name: "github",
-      path: "https://github.com/creativetimofficial/material-tailwind",
-    },
+    // {
+    //   color: "black",
+    //   name: "github",
+    //   path: "https://github.com/creativetimofficial/material-tailwind",
+    // },
   ],
   menus: [
     {
-      name: "useful links",
+      name: "Otros recursos",
       items: [
-        { name: "About Us", path: "https://www.creative-tim.com/presentation" },
-        { name: "Blog", path: "https://www.creative-tim.com/blog" },
-        {
-          name: "Github",
-          path: "https://www.github.com/creativetimofficial/material-tailwind?ref=mtk",
-        },
-        {
-          name: "Free Products",
-          path: "https://www.creative-tim.com/templates/free?ref=mtk",
-        },
+        { name: "Contáctanos", path: "mailto:washitocar@gmail.com" },
+        { name: "Chat de Washitos", path: "#" }
       ],
     },
-    {
-      name: "other resources",
-      items: [
-        {
-          name: "MIT License",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk",
-        },
-        {
-          name: "Contribute",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
-        },
-        {
-          name: "Change Log",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CHANGELOG.md?ref=mtk",
-        },
-        {
-          name: "Contact Us",
-          path: "https://creative-tim.com/contact-us?ref=mtk",
-        },
-      ],
-    },
+    // {
+    //   name: "other resources",
+    //   items: [
+    //     {
+    //       name: "MIT License",
+    //       path: "https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk",
+    //     },
+    //     {
+    //       name: "Contribute",
+    //       path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
+    //     },
+    //     {
+    //       name: "Change Log",
+    //       path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CHANGELOG.md?ref=mtk",
+    //     },
+    //     {
+    //       name: "Contact Us",
+    //       path: "https://creative-tim.com/contact-us?ref=mtk",
+    //     },
+    //   ],
+    // },
   ],
   copyright: (
     <>
-      Copyright © {year} Material Tailwind by{" "}
-      <a
-        href="https://www.creative-tim.com?ref=mtk"
-        target="_blank"
-        className="text-blue-gray-500 transition-colors hover:text-blue-500"
-      >
-        Creative Tim
-      </a>
+      Copyright © {year} Washito LLC {" "}
+      <Link to={'/'} className="text-blue-gray-500 transition-colors hover:text-blue-500">
+        Términos de servicio
+      </Link>
       .
     </>
   ),
