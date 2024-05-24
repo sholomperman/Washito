@@ -1,3 +1,3 @@
-## washito
+## Washito
 
 # link  https://washito.cl

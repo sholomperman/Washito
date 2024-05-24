@@ -1,4 +1,6 @@
-import { Home, Profile, Contacto, SignUp } from "@/pages";
+import { Home, Profile, SignUp } from "@/pages";
+import TerminosDeUso from './pages/terminos-de-uso';// its not getting export from index.js for some reason
+
 
 export const routes = [
   {
@@ -6,16 +8,16 @@ export const routes = [
     path: "/",
     element: <Home />,
   },
-  // {
-  //   name: "Registro Washito",
-  //   path: "/registro-washito",
-  //   element: <Profile />,
-  // },
-  // {
-  //   name: "Contacto",
-  //   path: "/contacto",
-  //   element: <Contacto/>,
-  // },
+  {
+    name: "",
+    path: "/registro-washito",
+    element: <Profile />,
+  },
+  {
+    name: "",
+    path: "/terminos-y-condisiones",
+    element: <TerminosDeUso />,
+  },
 ];
 
 export default routes;

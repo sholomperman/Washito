@@ -13,15 +13,16 @@ import {
 import { FingerPrintIcon, UsersIcon, RocketLaunchIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
-import { featuresData, teamData, contactData } from "@/data";
+import { featuresData, teamData } from "@/data";
 import { Carousel } from "@material-tailwind/react";
+import Services from "./services";
 
 
 export function Home() {
   return (
     <>
       <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
-        <div style={{ zIndex: -1 }} className="fixed top-0 h-full w-full bg-[url('/img/background-2.jpg')] bg-cover bg-center" />
+        <div style={{ zIndex: -1 }} className="fixed top-0 h-full w-full bg-black bg-[url('/img/background-2.jpg')] bg-cover bg-center bg" />
         <div style={{ zIndex: -1 }} className="fixed top-0 h-full w-full bg-black/50  bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
@@ -58,6 +59,7 @@ export function Home() {
               />
             ))}
           </div>
+          <Services />
           <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">

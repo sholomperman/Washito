@@ -6,7 +6,7 @@ export const featuresData = [
   {
     color: "gray",
     title: "Chat de Washitos",
-    text: "obtén tu primer lavado aquí 👇",
+    text: "Obtén tu primer lavado aquí 👇",
     icon: ChatBubbleLeftRightIcon,
     link: "https://google.com",
   },

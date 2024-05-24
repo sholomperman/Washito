@@ -33,7 +33,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
               ))}
             </div>
           </div>
-          <div className="mx-auto mt-12 grid w-max grid-cols-2 gap-24 lg:mt-0">
+          <div className={`mx-auto mt-12 grid w-max grid-cols-${menus.length < 2 ? '1': '2'} gap-24 lg:mt-0`}>
             {menus.map(({ name, items }) => (
               <div key={name}>
                 <Typography
@@ -109,7 +109,7 @@ Footer.defaultProps = {
     {
       name: "Otros recursos",
       items: [
-        { name: "Contáctanos", path: "mailto:washitocar@gmail.com" },
+        { name: "washitocar@gmail.com", path: "mailto:washitocar@gmail.com" },
         { name: "Chat de Washitos", path: "#" }
       ],
     },
@@ -137,8 +137,8 @@ Footer.defaultProps = {
   ],
   copyright: (
     <>
-      Copyright © {year} Washito LLC {" "}
-      <Link to={'/'} className="text-blue-gray-500 transition-colors hover:text-blue-500">
+      Copyright © {year} Washito SpA {" "}
+      <Link to={'/terminos-y-condisiones'} className="text-blue-gray-500 transition-colors hover:text-blue-500">
         Términos de servicio
       </Link>
       .
