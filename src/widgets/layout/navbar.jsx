@@ -8,7 +8,7 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon, QrCodeIcon } from "@heroicons/react/24/outline";
 
 export const whatsAppUrl = 'https://chat.whatsapp.com/BfChyyd6odkEvfH1YDSGjI'
 export function Navbar({ brandName, routes, action }) {
@@ -25,6 +25,7 @@ export function Navbar({ brandName, routes, action }) {
     <ul className="mb-4 mt-2 flex flex-col gap-2 text-inherit lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       {routes.map(({ name, path, icon, href, target }) => (
         <Typography
+          onClick={()=>{setOpenNav(false)}}
           key={name}
           as="li"
           variant="small"
@@ -33,6 +34,7 @@ export function Navbar({ brandName, routes, action }) {
         >
           {href ? (
             <a
+              onClick={()=>{setOpenNav(false)}}
               href={href}
               target={target}
               className="flex items-center gap-1 p-1 font-bold"
@@ -43,6 +45,7 @@ export function Navbar({ brandName, routes, action }) {
                 })}
               {name}
             </a>
+
           ) : (
             <Link
               to={path}
@@ -57,7 +60,7 @@ export function Navbar({ brandName, routes, action }) {
             </Link>
           )}
         </Typography>
-      ))}
+      ))} 
     </ul>
   );
 
@@ -95,18 +98,18 @@ export function Navbar({ brandName, routes, action }) {
         </IconButton>
       </div>
       <MobileNav
-        className="rounded-xl bg-white px-4 pt-4 pb-4 text-blue-gray-900 flex items-center justify-center"
+        className="rounded-xl bg-white px-4 pt-2 pb-4 text-blue-gray-900"
         open={openNav}
       >
          <div className="container mx-auto">
-          {/* {navList} */}
+          {navList}
           
           <a
             href={whatsAppUrl}
             target="_blank"
             className="m-2 block"
           >
-            <Button variant="text" size="sm" fullWidth>
+            <Button variant="gradient" size="sm" fullWidth>
             Ir a Chat de Washitos
             </Button>
           </a>

@@ -1,8 +1,8 @@
 export const teamData = [
   {
-    img: "/img/team-1.jpg",
+    img: "/img/",
     name: "Josi",
-    position: "gerente de logística",
+    position: "G`erente de logística",
     socials: [
       // {
       //   color: "light-blue",
@@ -19,7 +19,7 @@ export const teamData = [
     ],
   },
   {
-    img: "/img/team-2.jpg",
+    img: "/img/jaim.jpeg",
     name: "Jaim",
     position: "Especialista en Marketing",
     socials: [
