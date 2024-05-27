@@ -59,8 +59,8 @@ export function Home() {
               />
             ))}
           </div>
-          <Services />
-          <div className="mt-32 flex flex-wrap items-center">
+          <Services/>
+          <div id="AcercaDe" className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
                 <RocketLaunchIcon className="h-8 w-8 text-white " />
@@ -130,7 +130,7 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section className="px-4 pt-20 pb-48">
+      <section id="Fundadores" className="px-4 pt-20 pb-48">
         <div className="container mx-auto text-white/95">
           <PageTitle section="Nuestro equipo">
             <h1 className="text-white/70 text-3xl mb-4">Aquí están nuestros fundadores</h1>

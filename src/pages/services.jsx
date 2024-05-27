@@ -13,7 +13,7 @@ import {  servicesData } from "@/data";
 const Services = () => {
   
   return (
-    <section className="relative bg-white my-24 px-4">
+    <section id="Precios" className="relative bg-white my-24 px-4">
     <div className="container mx-auto">
       <PageTitle section="Precios" heading="Más vendidos">
       Nosotros lavamos los autos por fuera muy bien y los dejamos con un brillo espectacular.
