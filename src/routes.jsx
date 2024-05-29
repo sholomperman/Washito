@@ -1,12 +1,12 @@
-import { Home, Profile } from "@/pages";
+import { Home, ComoLavar } from "@/pages";
 import TerminosDeUso from './pages/terminos-de-uso';// its not getting export from index.js for some reason
 
 
 export const nonViewRoutes = [
   {
     name: "",
-    path: "/registro-washito",
-    element: <Profile />,
+    path: "/como-lavar",
+    element: <ComoLavar />,
   },
   {
     name: "",
@@ -23,13 +23,13 @@ export const routes = [
     element: <Home />,
   },
   {
-    name: "Fundadores",
-    href: "#Fundadores",
+    name: "Precios",
+    href: "#Precios",
     element: '',
   },
   {
-    name: "Precios",
-    href: "#Precios",
+    name: "Fundadores",
+    href: "#Fundadores",
     element: '',
   },
   {
