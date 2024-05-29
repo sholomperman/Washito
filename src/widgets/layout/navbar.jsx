@@ -8,19 +8,19 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
-import { Bars3Icon, XMarkIcon, QrCodeIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export const whatsAppUrl = 'https://chat.whatsapp.com/BfChyyd6odkEvfH1YDSGjI'
 export function Navbar({ brandName, routes, action }) {
   const [openNav, setOpenNav] = React.useState(false);
   const { pathname } = useLocation();
+  const changeNavBg = pathname.toLowerCase() === '/como-lavar' || pathname.toLowerCase() === '/terminos-y-condisiones' ? true : false;
   React.useEffect(() => {
     window.addEventListener(
       "resize",
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
-
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 text-inherit lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       {routes.map(({ name, path, icon, href, target }) => (
@@ -65,14 +65,20 @@ export function Navbar({ brandName, routes, action }) {
   );
 
   return (
-    <MTNavbar color='transparent' style={ pathname === '/como-lavar' ? {backgroundColor: 'rgb(204, 204, 204)'} : null } className="p-3">
+    <MTNavbar color='transparent' style={ 
+      changeNavBg ?
+      {backgroundColor: 'rgb(204, 204, 204)'} : null }
+       className="p-3">
       <div className="container mx-auto flex items-center justify-between text-white">
         <Link to="/">
           <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
             {brandName}
           </Typography>
         </Link>
-        <div className="hidden lg:block">{navList}</div>
+
+        {
+          !changeNavBg && <div className="hidden lg:block">{navList}</div>
+        }
         <div className="hidden gap-2 lg:flex">
           <a
             href={whatsAppUrl}
@@ -102,7 +108,7 @@ export function Navbar({ brandName, routes, action }) {
         open={openNav}
       >
          <div className="container mx-auto">
-          {navList}
+           {!changeNavBg && navList}
           
           <a
             href={whatsAppUrl}
