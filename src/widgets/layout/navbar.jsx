@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   Navbar as MTNavbar,
   MobileNav,
@@ -13,7 +13,7 @@ import { Bars3Icon, XMarkIcon, QrCodeIcon } from "@heroicons/react/24/outline";
 export const whatsAppUrl = 'https://chat.whatsapp.com/BfChyyd6odkEvfH1YDSGjI'
 export function Navbar({ brandName, routes, action }) {
   const [openNav, setOpenNav] = React.useState(false);
-
+  const { pathname } = useLocation();
   React.useEffect(() => {
     window.addEventListener(
       "resize",
@@ -65,7 +65,7 @@ export function Navbar({ brandName, routes, action }) {
   );
 
   return (
-    <MTNavbar color="transparent" className="p-3">
+    <MTNavbar color='transparent' style={ pathname === '/registro-Washito' ? {backgroundColor: 'rgb(204, 204, 204)'} : null } className="p-3">
       <div className="container mx-auto flex items-center justify-between text-white">
         <Link to="/">
           <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
@@ -98,7 +98,7 @@ export function Navbar({ brandName, routes, action }) {
         </IconButton>
       </div>
       <MobileNav
-        className="rounded-xl bg-white px-4 pt-2 pb-4 text-blue-gray-900"
+        className="rounded-xl bg-white px-4 text-blue-gray-900"
         open={openNav}
       >
          <div className="container mx-auto">
