@@ -65,7 +65,7 @@ export function Navbar({ brandName, routes, action }) {
   );
 
   return (
-    <MTNavbar color='transparent' style={ pathname === '/registro-Washito' ? {backgroundColor: 'rgb(204, 204, 204)'} : null } className="p-3">
+    <MTNavbar color='transparent' style={ pathname === '/como-lavar' ? {backgroundColor: 'rgb(204, 204, 204)'} : null } className="p-3">
       <div className="container mx-auto flex items-center justify-between text-white">
         <Link to="/">
           <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
