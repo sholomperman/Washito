@@ -5,7 +5,7 @@ import TerminosDeUso from './pages/terminos-de-uso';// its not getting export fr
 export const nonViewRoutes = [
   {
     name: "",
-    path: "/registro-washito",
+    path: "/como-lavar",
     element: <ComoLavar />,
   },
   {
