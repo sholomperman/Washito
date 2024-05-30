@@ -83,7 +83,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
 Footer.defaultProps = {
   title: "Washito",
   description:
-    "Una nueva forma revolucionaria de lavar tu coche donde no necesitas esperar y puedes hacerlo a tu conveniencia.",
+    "Una nueva forma revolucionaria de lavar tu autos donde no necesitas esperar y puedes hacerlo a tu conveniencia.",
   socials: [
     // {
     //   color: "gray",
