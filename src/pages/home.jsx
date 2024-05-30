@@ -28,16 +28,15 @@ export function Home() {
           <div className="flex flex-wrap items-center">
             <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
               <Typography
-                variant="h2"
+                variant="h4"
                 color="white"
-                className="mb-6 font-black"
+                className="mb-6 lg:text-4xl font-black"
               >
-                Conectate con nosotros para obtener tulavado de autos
+                Somos una solución para el lavado de autos, donde lavamos en tu lugar y a tu hora, solo con un par de clics.
               </Typography>
-              <Typography variant="lead" color="white" className="opacity-80">
-                This is a simple example of a Landing Page you can build using
-                Material Tailwind. It features multiple components based on the
-                Tailwind CSS and Material Design by Google.
+              <Typography variant="lead" color="white" className="opacity-90">
+                Nuestro objetivo es facilitar los lavados de autos para las personas
+                y brindar más empleos a los contratistas que califican para ser washitos.
               </Typography>
             </div>
           </div>
@@ -45,7 +44,7 @@ export function Home() {
       </div>
       <section className="bg-white px-4 pb-20 pt-4"> {/* -mt-32 removed from here and added to 47:000 */}
         <div className="container mx-auto" style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-          <div className="grid -mt-32  grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-1" style={{maxWidth: '500px', width: '95%'}}>
+          <div className="grid -mt-32 mb-5 grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-1" style={{maxWidth: '500px', width: '95%'}}>
             {featuresData.map(({ color, title, icon, link, text }) => (
               <FeatureCard
                 key={title}
