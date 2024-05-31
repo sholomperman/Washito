@@ -20,7 +20,7 @@ export function FeatureCard({ color, icon, title, link, text }) {
         >
           {icon}
         </IconButton>
-        <Typography variant="h5" className="mb-8" color="blue-gray">
+        <Typography variant="h3" className="mb-8" color="blue-gray">
           {title}
         </Typography>
         <Typography variant="p" className="mb-8" color="blue-gray">

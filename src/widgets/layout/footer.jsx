@@ -11,7 +11,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
       <div className="container mx-auto">
         <div className="flex flex-wrap pt-6 text-center lg:text-left">
           <div className="w-full px-4 lg:w-6/12">
-            <Typography variant="h4" className="mb-4" color="blue-gray">
+            <Typography variant="h3" className="mb-4" color="blue-gray">
               {title}
             </Typography>
             <Typography className="font-normal text-blue-gray-500 lg:w-2/5">
@@ -53,7 +53,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
                         target="_blank"
                         rel="noreferrer"
                         variant="small"
-                        className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
+                        className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700 text-center"
                       >
                         {item.name}
                       </Typography>

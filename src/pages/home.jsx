@@ -15,7 +15,7 @@ import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData } from "@/data";
 import { Carousel } from "@material-tailwind/react";
-import Services from "./services";
+import About from "./about";
 import OldLandingPage from "./old-landing-page";
 import LandingPage from "./landing-page";
 
@@ -23,8 +23,7 @@ import LandingPage from "./landing-page";
 export function Home() {
   return (
     <>
-    {/* <OldLandingPage /> */}
-    <LandingPage />
+    <OldLandingPage />
       <section className="bg-white px-4 pb-20 pt-4"> {/* -mt-32 removed from here and added to 47:000 */}
         <div className="container mx-auto" style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
           <div className="grid -mt-32 mb-5 grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-1" style={{maxWidth: '500px', width: '95%'}}>
@@ -41,7 +40,7 @@ export function Home() {
               />
             ))}
           </div>
-          <Services/>
+          <About/>
           <div id="AcercaDe" className="pt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
