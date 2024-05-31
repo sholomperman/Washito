@@ -10,7 +10,7 @@ import {
 import { PageTitle } from "@/widgets/layout";
 import {  servicesData } from "@/data";
 
-const Services = () => {
+const About = () => {
   
   return (
     <section id="Precios" className="relative bg-white py-24 px-4">
@@ -75,4 +75,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default About
