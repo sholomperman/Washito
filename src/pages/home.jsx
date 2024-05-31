@@ -95,7 +95,7 @@ export function Home() {
                 <CardBody>
                   <Typography variant="small" color="blue-gray" className="font-normal">Galoria</Typography>
                   <Typography
-                    variant="h5"
+                    variant="p"
                     color="blue-gray"
                     className="mb-3 mt-2 font-bold"
                   >
@@ -115,7 +115,7 @@ export function Home() {
       <section id="Fundadores" className="px-4 pt-20 pb-48">
         <div className="container mx-auto text-white/95">
           <PageTitle section="Nuestro equipo">
-            <h1 className="text-white/70 text-3xl mb-4">Aquí están nuestros fundadores</h1>
+            <h2 className="text-white/70 text-3xl mb-4">Aquí están nuestros fundadores</h2>
             <span className="text-white/70">
             According to the National Oceanic and Atmospheric Administration,
             Ted, Scambos, NSIDClead scentist, puts the potentially record

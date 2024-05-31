@@ -11,7 +11,7 @@ export function TeamCard({ img, name, position, socials }) {
         variant="rounded"
         className="h-full w-full shadow-lg text-black bg-black"
       />
-      <Typography variant="h5" color="white" className="mt-6 mb-1">
+      <Typography variant="p" color="white" className="mt-6 mb-1 text-xl font-semibold">
         {name}
       </Typography>
       {position && (
