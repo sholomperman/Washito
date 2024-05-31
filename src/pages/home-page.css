@@ -1,0 +1,103 @@
+/* landing-page.css */
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.1s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    }
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+/* html { font-size: 62.5% }  */
+
+  #home {
+    height: 100vh;
+    width: 100%;
+    padding-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right, .left {
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  h1, strong {
+    padding: 0 .3rem;
+    text-align: center;
+    text-wrap: wrap;
+  }
+
+  .right img {
+    width: 70%;
+  }
+  .left .welcome-txt {
+    font-weight: 500;
+    font-size: 2.4rem;
+    color: white;
+  }
+  .left .info-txt {
+    font-size: 2.2rem;
+    color: white;
+    text-align: start;
+  }
+
+  .typing {
+    color: #0072e0;
+    font-size: 2.1rem;
+  }
+  
+  @media (max-width: 960px){
+    #home {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .right, .left {
+      height: 30%;
+      width: 100%;
+      align-items: center;
+    }
+    .left .welcome-txt {
+      font-size: 1.5rem;
+    }
+    .left .info-txt {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+    .typing {
+      font-size: 1.2rem;
+    }
+  }

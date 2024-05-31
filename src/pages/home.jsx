@@ -17,12 +17,14 @@ import { featuresData, teamData } from "@/data";
 import { Carousel } from "@material-tailwind/react";
 import Services from "./services";
 import OldLandingPage from "./old-landing-page";
+import LandingPage from "./landing-page";
 
 
 export function Home() {
   return (
     <>
-    <OldLandingPage />
+    {/* <OldLandingPage /> */}
+    <LandingPage />
       <section className="bg-white px-4 pb-20 pt-4"> {/* -mt-32 removed from here and added to 47:000 */}
         <div className="container mx-auto" style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
           <div className="grid -mt-32 mb-5 grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-1" style={{maxWidth: '500px', width: '95%'}}>
