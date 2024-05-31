@@ -83,6 +83,7 @@ export function Navbar({ brandName, routes, action }) {
           <a
             href={whatsAppUrl}
             target="_blank"
+            rel="noreferrer"
           >
             <Button variant="text" size="sm" color="white" fullWidth>
             Ir a Chat de Washitos
@@ -114,6 +115,7 @@ export function Navbar({ brandName, routes, action }) {
             href={whatsAppUrl}
             target="_blank"
             className="m-2 block"
+            rel="noreferrer"
           >
             <Button variant="gradient" size="sm" fullWidth>
             Ir a Chat de Washitos
@@ -129,7 +131,7 @@ export function Navbar({ brandName, routes, action }) {
 }
 
 Navbar.defaultProps = {
-  brandName: <img width={50} src="/img/washito-logo.png"/>,
+  brandName: <img width={50} alt="icon logo" src="/img/washito-logo.png"/>,
   // action: (
   //   <a
   //     href="https://www.creative-tim.com/product/material-tailwind-kit-react"
