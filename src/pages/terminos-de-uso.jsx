@@ -2,12 +2,12 @@
 const TerminosDeUso = () => {
   const date = new Date().toLocaleDateString('en-GB')
   return (
-    <div className="bg-gray-[100%] py-40 px-4 sm:px-6 lg:px-8">
+    <div className="bg-bg_primary py-5 px-4 sm:px-6 lg:px-8">
       <div className="max-w-screen-lg mx-auto">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+        <h2 className="text-2xl font-semibold text-txt_primary mb-4">
           Términos y Condiciones
         </h2>
-        <div className="prose prose-lg text-gray-600">
+        <div className="prose prose-lg text-txt_secondary">
           <p>
           Términos y Condiciones de Uso del Sitio Web de Washito
               Fecha de entrada en vigor:{" " + date + " "}
@@ -83,9 +83,9 @@ const TerminosDeUso = () => {
               <br />
               {/* direcsion */}
               <br />
-              +56 9 5089 7401
+              <a href="tel:+56 9 5089 7401" target="_blank" rel="noreferrer">+56 9 5089 7401</a>
               <br />
-              washitocar@gmail.com
+              <a href="mailto:washitocar@gmail.com" target="_blank" rel="noreferrer">washitocar@gmail.com</a>
           </p>
         </div>
       </div>
