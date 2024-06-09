@@ -65,7 +65,7 @@ export function Navbar({ brandName, routes, action }) {
   );
 
   return (
-    <MTNavbar color='transparent' className="p-3 py-6">
+    <MTNavbar className="p-3 py-6 bg-bg_secondary md:rounded-none rounded-tr-none rounded-tl-none">
       <div className="container mx-auto flex items-center justify-between text-white">
         <Link to="/">
           <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
@@ -82,7 +82,7 @@ export function Navbar({ brandName, routes, action }) {
             target="_blank"
             rel="noreferrer"
           >
-            <Button variant="text" size="sm" color="white" fullWidth>
+            <Button variant="text" size="sm" className="text-white" fullWidth>
             Ir a Chat de Washitos
             </Button>
           </a>
@@ -102,7 +102,7 @@ export function Navbar({ brandName, routes, action }) {
         </IconButton>
       </div>
       <MobileNav
-        className="rounded-xl bg-white px-4 text-blue-gray-900"
+        className="rounded-xl bg-bg_primary px-4 text-txt_primary m-0"
         open={openNav}
       >
          <div className="container mx-auto">
@@ -114,7 +114,7 @@ export function Navbar({ brandName, routes, action }) {
             className="m-2 block"
             rel="noreferrer"
           >
-            <Button variant="gradient" size="sm" fullWidth>
+            <Button className="bg-bg_secondary"  size="sm" fullWidth>
             Ir a Chat de Washitos
             </Button>
           </a>

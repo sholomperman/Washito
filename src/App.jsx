@@ -7,7 +7,7 @@ import { whatsAppUrl } from '@/widgets/layout';
 
 function App() {
   return (
-    <div className='bg-bg_secondary  md:mx-24 mx-0 relative'>
+    <div className='md:mx-24 mx-0 relative'>
       <a href={whatsAppUrl} target="_blank" rel="noopener noreferrer">
        <ChatBubbleLeftRightIcon className="w-14 h-14 fixed right-5 bottom-5 z-20 p-2 bg-bg_secondary rounded-full wave"/>
       </a>
