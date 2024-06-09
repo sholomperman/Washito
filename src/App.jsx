@@ -1,16 +1,17 @@
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { Navbar } from "@/widgets/layout";
 import routes, {nonViewRoutes} from "@/routes";
-
+import { Card, Typography, } from "@material-tailwind/react";
+import { ChatBubbleLeftRightIcon, } from "@heroicons/react/24/solid";
+import { whatsAppUrl } from '@/widgets/layout';
 
 function App() {
-  const { pathname } = useLocation();
-
   return (
-    <>
-        <div className="container absolute left-2/4 z-10 mx-auto -translate-x-2/4 p-4">
-          <Navbar routes={routes} />
-        </div>
+    <div className='bg-bg_secondary  md:mx-24 mx-0 relative'>
+      <a href={whatsAppUrl} target="_blank" rel="noopener noreferrer">
+       <ChatBubbleLeftRightIcon className="w-14 h-14 fixed right-5 bottom-5 z-20 p-2 bg-bg_secondary rounded-full wave"/>
+      </a>
+      <Navbar routes={routes}/>
       <Routes>
         {routes.map(
           ({ path, element }, key) =>
@@ -25,7 +26,7 @@ function App() {
         }
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

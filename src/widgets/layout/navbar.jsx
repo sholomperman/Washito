@@ -65,10 +65,7 @@ export function Navbar({ brandName, routes, action }) {
   );
 
   return (
-    <MTNavbar color='transparent' style={ 
-      changeNavBg ?
-      {backgroundColor: 'rgb(204, 204, 204)'} : null }
-       className="p-3">
+    <MTNavbar color='transparent' className="p-3 py-6">
       <div className="container mx-auto flex items-center justify-between text-white">
         <Link to="/">
           <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
@@ -131,7 +128,7 @@ export function Navbar({ brandName, routes, action }) {
 }
 
 Navbar.defaultProps = {
-  brandName: <img width={50} alt="icon logo" src="/img/washito-logo.png"/>,
+  brandName: <img width={250} alt="icon logo" src="/img/bannerchico.png"/>, //washito-logo.png
   // action: (
   //   <a
   //     href="https://www.creative-tim.com/product/material-tailwind-kit-react"

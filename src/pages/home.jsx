@@ -16,17 +16,16 @@ import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData } from "@/data";
 import { Carousel } from "@material-tailwind/react";
 import About from "./about";
-import OldLandingPage from "./old-landing-page";
 import LandingPage from "./landing-page";
 
 
 export function Home() {
   return (
     <>
-    <OldLandingPage />
-      <section className="bg-white px-4 pb-20 pt-4"> {/* -mt-32 removed from here and added to 47:000 */}
+    <LandingPage />
+      <section className="px-4 pb-20 pt-4 bg-bg_primary"> {/* -mt-32 removed from here and added to 47:000 */}
         <div className="container mx-auto" style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-          <div className="grid -mt-32 mb-5 grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-1" style={{maxWidth: '500px', width: '95%'}}>
+          {/* <div className="grid -mt-32 mb-5 grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-1" style={{maxWidth: '500px', width: '95%'}}>
             {featuresData.map(({ color, title, icon, link, text }) => (
               <FeatureCard
                 key={title}
@@ -39,34 +38,36 @@ export function Home() {
                 link={link}
               />
             ))}
-          </div>
+          </div> */}
           <About/>
-          <div id="AcercaDe" className="pt-32 flex flex-wrap items-center">
+          <div id="AcercaDe" className="pt-32 flex flex-wrap items-center bg-bg_primary">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
-                <RocketLaunchIcon className="h-8 w-8 text-white " />
+                <RocketLaunchIcon className="h-8 w-8 text-white" />
               </div>
               <Typography
                 variant="h3"
-                className="mb-3 font-bold"
-                color="blue-gray"
+                className="mb-3 font-bold text-txt_primary"
               >
                 Descubre Quiénes Somos y Nuestros Valores
               </Typography>
-              <Typography className="mb-8 font-normal text-blue-gray-500">
-                En Washito, ofrecemos un servicio de lavado de autos único, 
-                donde vamos directamente al lugar de estacionamiento del cliente para brindar comodidad y conveniencia. 
-                Nuestro compromiso con la excelencia y la satisfacción del cliente es primordial en todo lo que hacemos.
+              <Typography className="mb-8 font-normal text-txt_secondary">
+                Conveniencia: "En Washito entendemos que tu tiempo es valioso. Por eso, 
+                ofrecemos un servicio de lavado de autos a pedido que se adapta a tu agenda, 
+                brindándote la libertad de disfrutar de un auto limpio sin salir de casa." 
+                Icono de un reloj para representar la idea de tiempo y conveniencia.
                 <br />
                 <br />
-                Nuestros valores se basan en la integridad, la calidad y el servicio excepcional. 
-                Nos esforzamos por superar las expectativas de nuestros clientes en cada lavado, 
-                asegurando que cada vehículo reciba un tratamiento meticuloso y un resultado impecable.
+                Sostenibilidad: "Nos comprometemos con el cuidado del medio ambiente. 
+                Nuestro exclusivo método de lavado en seco reduce significativamente el consumo de agua, 
+                garantizando un lavado efectivo sin comprometer la salud de nuestro planeta."
+                Imagen de un planeta Tierra con una gota de agua sobre él para simbolizar el cuidado del medio ambiente.
                 <br />
                 <br />
-                Descubre la diferencia con Washito y únete a nuestra comunidad de clientes 
-                satisfechos que confían en nosotros para mantener sus vehículos en óptimas condiciones, 
-                sin importar dónde estén estacionados.
+                Calidad: "En Washito, cada detalle cuenta. 
+                Nuestro equipo de profesionales está dedicado a proporcionar un servicio de la más alta calidad, 
+                garantizando que tu auto reciba el cuidado que se merece en cada lavado."
+                Icono de un auto brillante y reluciente para representar la calidad y el cuidado en el lavado.
               </Typography>
               {/* <Button variant="filled">read more</Button> */}
             </div>
@@ -111,7 +112,7 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section id="Fundadores" className="px-4 pt-20 pb-48">
+      {/* <section id="Fundadores" className="px-4 pt-20 pb-48 bg-bg_primary">
         <div className="container mx-auto text-white/95">
           <PageTitle section="Nuestro equipo">
             <h2 className="text-white/70 text-3xl mb-4">Aquí están nuestros fundadores</h2>
@@ -141,7 +142,7 @@ export function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       <div className="bg-white">
         <Footer />
       </div>
