@@ -17,10 +17,9 @@ const LandingPage = () => {
             variant="h2"
             className="mb-1 md:text-3xl text-lg text-txt_secondary"
           >
-          Breve descripción del servicio y su conveniencia: "Washito te ofrece la comodidad de un lavado de autos a pedido, 
+          "Washito te ofrece la comodidad de un lavado de autos a pedido, 
           sin importar dónde te encuentres. Desde tu hogar hasta tu lugar de trabajo, 
           nuestro equipo de expertos llegará a ti para dejar tu auto impecable."
-          Imágenes de autos limpios y relucientes.
           </Typography>
         </div>
       </div>
