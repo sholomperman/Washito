@@ -33,11 +33,11 @@ export const routes = [
     href: "#Precios",
     element: '',
   },
-  {
-    name: "Fundadores",
-    href: "#Fundadores",
-    element: '',
-  },
+  // {
+  //   name: "Fundadores",
+  //   href: "#Fundadores",
+  //   element: '',
+  // },
   {
     name: "Acerca de",
     href: "#AcercaDe",
