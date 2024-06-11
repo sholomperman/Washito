@@ -1,19 +1,19 @@
 
 export const servicesData = [
   {
-    title: "Sedan",
+    title: "Hatchback",
     price: "11,990",
   },
   {
-    title: "SUV",
+    title: "Sedan",
     price: "12,990",
   },
   {
-    title: "SUV L / Auto L",
+    title: "SUV",
     price: "15,990",
   },
   {
-    title: "Extra Grande",
+    title: "XL",
     price: "17,990",
   },
 ];
