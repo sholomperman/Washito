@@ -3,6 +3,7 @@ import { Typography, Button } from "@material-tailwind/react";
 import './wave.css';
 import { whatsAppUrl } from '@/widgets/layout';
 import mainImg from '../../public/img/c-car.png'
+import { RocketLaunchIcon } from "@heroicons/react/24/solid";
 
 const LandingPage = () => {
   return (
@@ -18,9 +19,9 @@ const LandingPage = () => {
             variant="h2"
             className="mb-1 md:text-3xl text-lg text-txt_secondary"
           >
-          "Washito te ofrece la comodidad de un lavado de autos a pedido, 
+          Washito te ofrece la comodidad de un lavado de autos a pedido, 
           sin importar dónde te encuentres. Desde tu hogar hasta tu lugar de trabajo, 
-          nuestro equipo de expertos llegará a ti para dejar tu auto impecable."
+          nuestro equipo de expertos llegará a ti para dejar tu auto impecable.
           </Typography>
         </div>
       </div>
@@ -31,31 +32,6 @@ const LandingPage = () => {
           </a>
       </div>
     </div>
-  </div>
-  <div className="w-full md:px-36 text-center bg-bg_primary">
-      <div>
-      <Typography
-        variant="h2"
-        className="pb-5 md:text-3xl text-lg text-txt_secondary px-5">
-        <span className='text-txt_primary'>"Lavado de autos a pedido </span>
-        en Lo Barnechea y Las Condes: Transforma tu auto en un Washito".
-      </Typography>
-      </div>
-      {/* Icono de un auto siendo lavado por un Washito. */}
-      <Typography
-        variant="h2"
-        className="p-5 md:text-3xl text-lg text-txt_secondary px-5">
-        <span className='text-txt_primary'>"Lavado en seco: </span>
-        Cuida tu auto y el medio ambiente con nuestro exclusivo método de lavado en seco".
-      </Typography>
-      {/* Imagen de un auto limpio y reluciente con gotas de agua y una esponja. */}
-      <Typography
-        variant="h2"
-        className="p-5 md:text-3xl text-lg text-txt_secondary px-5">
-        <span className='text-txt_primary'>"Conveniencia a tu alcance: </span>
-        Solicita tu lavado con un clic y deja que nosotros nos encarguemos del resto".
-      </Typography>
-      {/* Icono de un teléfono móvil con un botón de "Solicitar" o una mano sosteniendo un teléfono con un mensaje de WhatsApp. */}
   </div>
   </>
   )
