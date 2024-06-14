@@ -102,7 +102,7 @@ export function Navbar({ brandName, routes, action }) {
         </IconButton>
       </div>
       <MobileNav
-        className="rounded-xl bg-bg_primary px-4 text-txt_primary m-0"
+        className="rounded-xl bg-bg_primary px-4 text-txt_primary txt_p_font m-0"
         open={openNav}
       >
          <div className="container mx-auto">
