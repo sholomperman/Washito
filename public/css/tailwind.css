@@ -11,4 +11,12 @@
 html {
     scroll-behavior: smooth;
   }
-  
+
+.txt_p_font {
+  font-family: "Rubik", sans-serif;
+
+}
+
+.txt_s_font {
+  font-family: "Oswald", sans-serif;
+}

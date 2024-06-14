@@ -4,10 +4,10 @@ const TerminosDeUso = () => {
   return (
     <div className="bg-bg_primary py-5 px-4 sm:px-6 lg:px-8">
       <div className="max-w-screen-lg mx-auto">
-        <h2 className="text-2xl font-semibold text-txt_primary mb-4">
+        <h2 className="text-2xl font-semibold text-txt_primary txt_p_font mb-4">
           Términos y Condiciones
         </h2>
-        <div className="prose prose-lg text-txt_secondary">
+        <div className="prose prose-lg text-txt_secondary txt_s_font">
           <p>
           Términos y Condiciones de Uso del Sitio Web de Washito
               Fecha de entrada en vigor:{" " + date + " "}

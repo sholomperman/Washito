@@ -4,109 +4,70 @@ import {
   CardBody,
   CardHeader,
   Typography,
+  Button
 } from "@material-tailwind/react";
-
+import { whatsAppUrl } from '@/widgets/layout';
 import { Footer } from "@/widgets/layout";
 import { Carousel } from "@material-tailwind/react";
 import { RocketLaunchIcon } from "@heroicons/react/24/solid";
 import About from "./about";
 import LandingPage from "./landing-page";
 
+function Btn ({txt}) {
+  return(
+    <a className='z-10' target="_blank" rel="noreferrer noopener" href={whatsAppUrl}>
+      <Button className='bg-bg_secondary' size="lg text-txt_primary txt_p_font">{txt}</Button>
+    </a>
+  )
+}
+
 
 export function Home() {
   return (
     <>
     <LandingPage />
-      <section className="px-4 pb-20 pt-4 bg-bg_primary"> {/* -mt-32 removed from here and added to 47:000 */}
-          {/* <div className="grid -mt-32 mb-5 grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-1" style={{maxWidth: '500px', width: '95%'}}>
-            {featuresData.map(({ color, title, icon, link, text }) => (
-              <FeatureCard
-                key={title}
-                color={color}
-                title={title}
-                text={text}
-                icon={React.createElement(icon, {
-                  className: "w-5 h-5 text-white",
-                })}
-                link={link}
-              />
-            ))}
-          </div> */}
-          
-
-
-           {/*  <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
-              <Card className="shadow-lg border shadow-gray-500/10 rounded-lg">
-                <CardHeader floated={false} className="relative h-56">
-                <Carousel loop={true} className="rounded-xl">
-                    <img
-                      src="https://images.unsplash.com/photo-1607860108358-47c0441e7adb?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      alt="car wash 1"
-                      className="h-full w-full object-cover"
-                    />
-                    <img
-                      src="https://images.unsplash.com/photo-1565381169814-50def2eb0387?q=80&w=2934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA"
-                      alt="car wash 2"
-                      className="h-full w-full object-cover"
-                    />
-                    <img
-                      src="https://images.unsplash.com/photo-1527581849771-416a9d62308e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      alt="car wash 3"
-                      className="h-full w-full object-cover"
-                    />
-                </Carousel>
-                </CardHeader>
-                <CardBody>
-                  <Typography variant="small" color="blue-gray" className="font-normal">Galoria</Typography>
-                  <Typography
-                    variant="p"
-                    color="blue-gray"
-                    className="mb-3 mt-2 font-bold"
-                  >
-                  Fotos de Washito
-                  </Typography>
-                  <Typography className="font-normal text-blue-gray-500">
-                    {/* The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens.
-                  </Typography>
-                </CardBody>
-              </Card>
-            </div>*/}
+  <section className="px-4 pb-20 pt-4 bg-bg_primary"> {/* -mt-32 removed from here and added to 47:000 */}
     <div id="AcercaDe" className="pt-32 flex flex-wrap items-center bg-bg_primary mx-auto -mt-8 w-full px-4 md:p-24"> 
-      <Typography className="mb-8 font-normal text-txt_secondary">
+      <Typography className="mb-8 font-normal text-txt_secondary txt_s_font">
         <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
-            <RocketLaunchIcon className="h-6 w-6 text-white" />
+          <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M680-80q-83 0-141.5-58.5T480-280q0-83 58.5-141.5T680-480q83 0 141.5 58.5T880-280q0 83-58.5 141.5T680-80Zm67-105 28-28-75-75v-112h-40v128l87 87Zm-547 65q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h167q11-35 43-57.5t70-22.5q40 0 71.5 22.5T594-840h166q33 0 56.5 23.5T840-760v250q-18-13-38-22t-42-16v-212h-80v120H280v-120h-80v560h212q7 22 16 42t22 38H200Zm280-640q17 0 28.5-11.5T520-800q0-17-11.5-28.5T480-840q-17 0-28.5 11.5T440-800q0 17 11.5 28.5T480-760Z"/></svg>
         </div>
         <br />
-        <span className="font-bold text-txt_primary">Lavado de autos a pedido: </span>
+        <span className="font-bold text-txt_primary txt_p_font">Lavado de autos a pedido: </span>
         en Lo Barnechea y Las Condes: Transforma tu auto en un Washito.
         <br />
         <br />
 
         <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
-            <RocketLaunchIcon className="h-6 w-6 text-white" />
+          <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M320-80q-33 0-56.5-23.5T240-160v-172q0-74 21-142.5T327-611q-38-9-62.5-41T240-724v-42q0-48 41.5-80.5T368-874l356 35q17 2 26.5 13.5T760-799v119q0 15-10.5 26.5T724-640l-36 4q14 49 37 88t55 56l-40 70q-53-31-82-85.5T612-629l-44 4q8 50 30.5 101t45.5 92q18 32 27 67t9 71v134q0 33-23.5 56.5T600-80H320Zm0-676v32q0 18 13 29t31 9l316-30v-48l-316-30q-18-2-31 9t-13 29Zm0 596h280v-134q0-26-6.5-51T574-393q-31-54-54-111.5T488-617l-60 5-26 34q-40 53-61 116.5T320-332v172Zm0 0h280-280Z"/></svg>
         </div>
         <br />
-        <span className="font-bold text-txt_primary">Lavado en seco: </span>
+        <span className="font-bold text-txt_primary txt_p_font">Lavado en seco: </span>
         Cuida tu auto y el medio ambiente con nuestro exclusivo método de lavado en seco.
         <br />
         <br />
 
         <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
-            <RocketLaunchIcon className="h-6 w-6 text-white" />
+          <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
         </div>
         <br />
-        <span className="font-bold text-txt_primary">Conveniencia a tu alcance: </span>
+        <span className="font-bold text-txt_primary txt_p_font">Conveniencia a tu alcance: </span>
         Solicita tu lavado con un clic y deja que nosotros nos encarguemos del resto.
+
+        <br />
+        <br />
+        <Btn txt='Agenda tu hora'/>
         <br />
         <br />
 
+
+        {/* secont part of page */}
+
         <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
-          <RocketLaunchIcon className="h-6 w-6 text-white" />
+          <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M516-120 402-402 120-516v-56l195-73-203-203 57-57 736 736-57 57-203-203-73 195h-56Zm191-361-63-63 60-160-160 60-63-63 359-133-133 359ZM542-268l41-109-206-206-109 41 196 78 78 196Zm52-326ZM480-480Z"/></svg>
         </div>
         <br />
-        <span className="font-bold text-txt_primary">Conveniencia: </span>
+        <span className="font-bold text-txt_primary txt_p_font">Conveniencia: </span>
         En Washito entendemos que tu tiempo es valioso. Por eso, 
         ofrecemos un servicio de lavado de autos a pedido que se adapta a tu agenda, 
         brindándote la libertad de disfrutar de un auto limpio sin salir de casa. 
@@ -115,10 +76,10 @@ export function Home() {
         <br />
 
         <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
-          <RocketLaunchIcon className="h-6 w-6 text-white" />
+          <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M440-690v-100q0-42 29-71t71-29h100v100q0 42-29 71t-71 29H440ZM220-450q-58 0-99-41t-41-99v-140h140q58 0 99 41t41 99v140H220ZM640-90q-39 0-74.5-12T501-135l-33 33q-11 11-28 11t-28-11q-11-11-11-28t11-28l33-33q-21-29-33-64.5T400-330q0-100 70-170.5T640-571h241v241q0 100-70.5 170T640-90Zm0-80q67 0 113-47t46-113v-160H640q-66 0-113 46.5T480-330q0 23 5.5 43.5T502-248l110-110q11-11 28-11t28 11q11 11 11 28t-11 28L558-192q18 11 38.5 16.5T640-170Zm1-161Z"/></svg>
         </div>
         <br />
-        <span className="font-bold text-txt_primary">Sostenibilidad: </span>
+        <span className="font-bold text-txt_primary txt_p_font">Sostenibilidad: </span>
         Nos comprometemos con el cuidado del medio ambiente. 
         Nuestro exclusivo método de lavado en seco reduce significativamente el consumo de agua, 
         garantizando un lavado efectivo sin comprometer la salud de nuestro planeta.
@@ -127,52 +88,23 @@ export function Home() {
         <br />
 
         <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
-          <RocketLaunchIcon className="h-6 w-6 text-white" />
+          <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
         </div>
         <br />
-        <span className="font-bold text-txt_primary">Calidad: </span>
+        <span className="font-bold text-txt_primary txt_p_font">Calidad: </span>
         En Washito, cada detalle cuenta. 
         Nuestro equipo de profesionales está dedicado a proporcionar un servicio de la más alta calidad, 
         garantizando que tu auto reciba el cuidado que se merece en cada lavado.
         Icono de un auto brillante y reluciente para representar la calidad y el cuidado en el lavado.
+        <br />
+        <br />
+        <Btn txt='Contactanos'/>
+
       </Typography>
     </div>
   <About/>
 </section>
-      {/* <section id="Fundadores" className="px-4 pt-20 pb-48 bg-bg_primary">
-        <div className="container mx-auto text-white/95">
-          <PageTitle section="Nuestro equipo">
-            <h2 className="text-white/70 text-3xl mb-4">Aquí están nuestros fundadores</h2>
-            <span className="text-white/70">
-            According to the National Oceanic and Atmospheric Administration,
-            Ted, Scambos, NSIDClead scentist, puts the potentially record
-            maximum.
-            </span>
-          </PageTitle>
-          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-3">
-            {teamData.map(({ img, name, position, socials }) => (
-              <TeamCard
-                key={name}
-                img={img}
-                name={name}
-                position={position}
-                socials={
-                  <div className="flex items-center gap-2">
-                    {socials.map(({ color, name }) => (
-                      <IconButton key={name} color={color} variant="text">
-                        <i className={`fa-brands text-xl fa-${name}`} />
-                      </IconButton>
-                    ))}
-                  </div>
-                }
-              />
-            ))}
-          </div>
-        </div>
-      </section> */}
-      <div className="bg-white">
-        <Footer />
-      </div>
+  <Footer />
     </>
   );
 }
