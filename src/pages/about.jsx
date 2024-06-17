@@ -9,12 +9,10 @@ import {  servicesData } from "@/data";
 const About = () => {
   
   return (
-    <section id="Precios" className="relative py-24 px-4">
+    <section id="Precios" className="relative py-12 px-4">
     <div className="container mx-auto">
-      <PageTitle section="Precios" heading="Más vendidos">
-      Nosotros lavamos los autos por fuera muy bien y los dejamos con un brillo espectacular.
-      </PageTitle>
-      <div className="mx-auto mt-20 mb-0 grid max-w-5xl grid-cols-2 gap-16 md:grid-cols-2 lg:grid-cols-2">
+      <PageTitle section="Precios" />
+      <div className="mx-auto mt-8 mb-0 grid max-w-5xl grid-cols-2 gap-16 md:grid-cols-2 lg:grid-cols-2">
         {servicesData.map(({ title, price, icon }, index) => (
           
           <Card

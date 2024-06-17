@@ -12,6 +12,7 @@ import { Carousel } from "@material-tailwind/react";
 import { RocketLaunchIcon } from "@heroicons/react/24/solid";
 import About from "./about";
 import LandingPage from "./landing-page";
+import PageTitle from "../widgets/layout/page-title";
 
 function Btn ({txt}) {
   return(
@@ -26,8 +27,8 @@ export function Home() {
   return (
     <>
     <LandingPage />
-  <section className="px-4 pb-20 pt-4 bg-bg_primary"> {/* -mt-32 removed from here and added to 47:000 */}
-    <div id="AcercaDe" className="pt-32 flex flex-wrap items-center bg-bg_primary mx-auto -mt-8 w-full px-4 md:p-24"> 
+  <section className="p-4 bg-bg_primary"> 
+    <div id="AcercaDe" className="pt-4 flex flex-wrap items-center bg-bg_primary mx-auto -mt-8 w-full px-4 md:p-24"> 
       <Typography className="mb-8 font-normal text-txt_secondary txt_s_font">
         <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
           <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M680-80q-83 0-141.5-58.5T480-280q0-83 58.5-141.5T680-480q83 0 141.5 58.5T880-280q0 83-58.5 141.5T680-80Zm67-105 28-28-75-75v-112h-40v128l87 87Zm-547 65q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h167q11-35 43-57.5t70-22.5q40 0 71.5 22.5T594-840h166q33 0 56.5 23.5T840-760v250q-18-13-38-22t-42-16v-212h-80v120H280v-120h-80v560h212q7 22 16 42t22 38H200Zm280-640q17 0 28.5-11.5T520-800q0-17-11.5-28.5T480-840q-17 0-28.5 11.5T440-800q0 17 11.5 28.5T480-760Z"/></svg>
@@ -51,9 +52,10 @@ export function Home() {
           <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
         </div>
         <br />
-        <span className="font-bold text-txt_primary txt_p_font">Conveniencia a tu alcance: </span>
-        Solicita tu lavado con un clic y deja que nosotros nos encarguemos del resto.
-
+        <span className="font-bold text-txt_primary txt_p_font">Conveniencia: </span>
+        En Washito entendemos que tu tiempo es valioso. Por eso, 
+        ofrecemos un servicio de lavado de autos a pedido que se adapta a tu agenda, 
+        brindándote la libertad de disfrutar de un auto limpio sin salir de casa.
         <br />
         <br />
         <Btn txt='Agenda tu hora'/>
@@ -62,16 +64,16 @@ export function Home() {
 
 
         {/* secont part of page */}
+        <div className="py-8">
+          <PageTitle section='Nuestros valores'/>
+        </div>
 
         <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
           <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M516-120 402-402 120-516v-56l195-73-203-203 57-57 736 736-57 57-203-203-73 195h-56Zm191-361-63-63 60-160-160 60-63-63 359-133-133 359ZM542-268l41-109-206-206-109 41 196 78 78 196Zm52-326ZM480-480Z"/></svg>
         </div>
         <br />
-        <span className="font-bold text-txt_primary txt_p_font">Conveniencia: </span>
-        En Washito entendemos que tu tiempo es valioso. Por eso, 
-        ofrecemos un servicio de lavado de autos a pedido que se adapta a tu agenda, 
-        brindándote la libertad de disfrutar de un auto limpio sin salir de casa. 
-        Icono de un reloj para representar la idea de tiempo y conveniencia.
+        <span className="font-bold text-txt_primary txt_p_font">Conveniencia a tu alcance: </span>
+        Solicita tu lavado con un clic y deja que nosotros nos encarguemos del resto.
         <br />
         <br />
 
@@ -83,7 +85,6 @@ export function Home() {
         Nos comprometemos con el cuidado del medio ambiente. 
         Nuestro exclusivo método de lavado en seco reduce significativamente el consumo de agua, 
         garantizando un lavado efectivo sin comprometer la salud de nuestro planeta.
-        Imagen de un planeta Tierra con una gota de agua sobre él para simbolizar el cuidado del medio ambiente.
         <br />
         <br />
 
@@ -95,7 +96,6 @@ export function Home() {
         En Washito, cada detalle cuenta. 
         Nuestro equipo de profesionales está dedicado a proporcionar un servicio de la más alta calidad, 
         garantizando que tu auto reciba el cuidado que se merece en cada lavado.
-        Icono de un auto brillante y reluciente para representar la calidad y el cuidado en el lavado.
         <br />
         <br />
         <Btn txt='Contactanos'/>
