@@ -2,19 +2,21 @@ import PropTypes from "prop-types";
 import { Typography, IconButton } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 import { whatsAppUrl } from '@/widgets/layout';
+import InstaEmbed from "../cards/InstaEmbed";
 
 const year = new Date().getFullYear();
 
 export function Footer({ title, description, socials, menus, copyright }) {
   return (
     <footer className="relative px-4 pt-8 pb-6 bg-bg_primary">
+      <InstaEmbed />
       <div className="container mx-auto">
         <div className="flex flex-wrap pt-6 text-center lg:text-left">
           <div className="w-full px-4 lg:w-6/12">
             <Typography variant="h3" className="mb-4 text-txt_primary txt_p_font">
               {title}
             </Typography>
-            <Typography className="font-normal text-txt_secondary txt_s_font lg:w-2/5">
+            <Typography className="font-normal text-txt_secondary lg:w-2/5">
               {description}
             </Typography>
             <div className="mx-auto mt-6 mb-8 flex justify-center gap-2 md:mb-0 lg:justify-start">
@@ -52,7 +54,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
                         target="_blank"
                         rel="noreferrer"
                         variant="small"
-                        className="mb-2 block font-normal text-txt_secondary txt_s_font hover:text-txt_primary txt_p_font text-center"
+                        className="mb-2 block font-normal text-txt_secondary hover:text-txt_primary txt_p_font text-center"
                       >
                         {item.name}
                       </Typography>
@@ -68,7 +70,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
           <div className="mx-auto w-full px-4 text-center">
             <Typography
               variant="small"
-              className="font-normal text-txt_secondary txt_s_font"
+              className="font-normal text-txt_secondary"
             >
               {copyright}
             </Typography>
@@ -138,7 +140,7 @@ Footer.defaultProps = {
   copyright: (
     <>
       Copyright © {year} Washito SpA {" "}
-      <Link to={'/terminos-y-condisiones'} className="text-txt_secondary txt_s_font transition-colors hover:text-txt_primary txt_p_font">
+      <Link to={'/terminos-y-condisiones'} className="text-txt_secondary transition-colors hover:text-txt_primary txt_p_font">
         Términos de servicio
       </Link>
       .
