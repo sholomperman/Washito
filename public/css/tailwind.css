@@ -20,3 +20,8 @@ html {
 .txt_s_font {
   font-family: "Oswald", sans-serif;
 }
+
+/* InstagramEmbed.css */
+#instagram-embed-0 {
+  margin: 0 auto !important;
+}
