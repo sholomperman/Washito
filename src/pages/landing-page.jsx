@@ -12,7 +12,7 @@ const LandingPage = () => {
     <div className="flex items-center md:flex-row flex-col max-w-8xl h-full container mx-auto">
       <div className="flex flex-wrap md:w-1/2 h-full items-center">
         <div className="ml-auto mr-auto w-full text-center lg:w-8/12">
-        <Typography variant="h1" className='md:text-4xl text-2xl mb-1 text-txt_primary txt_p_font'>¡Lavamos tu auto donde sea y cuando sea!{" "}
+        <Typography variant="h1" className='md:text-4xl text-4xl mb-1 text-txt_primary txt_p_font'>¡Lavamos tu auto donde sea y cuando sea!{" "}
           <span role="img" aria-labelledby="wave" className="wave">👋🏻</span>
         </Typography>
           <Typography
