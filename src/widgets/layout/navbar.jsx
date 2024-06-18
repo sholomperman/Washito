@@ -128,7 +128,7 @@ export function Navbar({ brandName, routes, action }) {
 }
 
 Navbar.defaultProps = {
-  brandName: <img width={250} alt="icon logo" src="/img/banner.png"/>, //washito-logo.png
+  brandName: <img width={250} alt="icon logo" src="/img/2bannerblanco.png"/>, //washito-logo.png
   // action: (
   //   <a
   //     href="https://www.creative-tim.com/product/material-tailwind-kit-react"
