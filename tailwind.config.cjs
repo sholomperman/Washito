@@ -6,11 +6,17 @@ module.exports = withMT({
   theme: {
     extend: {
       colors: {
-        bg_primary: '#f1f1f1',
-        bg_secondary: '#6e3ee2',
-        txt_primary: '#8039fe',
-        txt_secondary: '#373737',
+        bg_primary: '#E1EAFF',
+        bg_secondary: '#0081e9',
+        txt_primary: '#86c129',
+        txt_secondary: '#003393',
         white: '#ffffff',
+        
+
+        // bgprimary>#899dc9
+        // bgsecondary>#0081e9
+        // txtprimary> #86c129
+        // txtsecondary>#003393
       },
     },
   },

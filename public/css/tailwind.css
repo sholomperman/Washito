@@ -13,10 +13,20 @@ html {
   }
 
 .txt_p_font {
-  font-family: "Rubik", sans-serif;
-
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
 }
 
 .txt_s_font {
   font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* InstagramEmbed.css */
+#instagram-embed-0 {
+  margin: 0 auto !important;
 }
