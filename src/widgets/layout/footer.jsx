@@ -54,7 +54,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
                         target="_blank"
                         rel="noreferrer"
                         variant="small"
-                        className="mb-2 block font-normal text-txt_secondary hover:text-txt_primary txt_p_font text-center"
+                        className="mb-2 block font-normal text-txt_secondary hover:text-txt_primary txt_p_font md:text-left text-center"
                       >
                         {item.name}
                       </Typography>
