@@ -28,7 +28,7 @@ export function Home() {
     <>
     <LandingPage />
   <section className="p-4 bg-bg_primary"> 
-    <div id="AcercaDe" className="pt-4 flex flex-wrap items-center bg-bg_primary mx-auto -mt-8 w-full px-4 md:p-24"> 
+    <div className="pt-4 flex flex-wrap items-center bg-bg_primary mx-auto -mt-8 w-full px-4 md:p-24"> 
       <Typography className="mb-8 text-lg text-txt_secondary txt_s_font">
         <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
           <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M680-80q-83 0-141.5-58.5T480-280q0-83 58.5-141.5T680-480q83 0 141.5 58.5T880-280q0 83-58.5 141.5T680-80Zm67-105 28-28-75-75v-112h-40v128l87 87Zm-547 65q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h167q11-35 43-57.5t70-22.5q40 0 71.5 22.5T594-840h166q33 0 56.5 23.5T840-760v250q-18-13-38-22t-42-16v-212h-80v120H280v-120h-80v560h212q7 22 16 42t22 38H200Zm280-640q17 0 28.5-11.5T520-800q0-17-11.5-28.5T480-840q-17 0-28.5 11.5T440-800q0 17 11.5 28.5T480-760Z"/></svg>
@@ -59,8 +59,8 @@ export function Home() {
         <br />
         <br />
         {/* secont part of page */}
-        <div className="py-8">
-          <PageTitle section='Nuestros valores'/>
+        <div id="AcercaDe" className="py-8 md:scroll-mt-0 scroll-mt-[160px]">
+          <PageTitle section='NUESTROS VALORES'/>
         </div>
 
         <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">

@@ -9,9 +9,9 @@ import {  servicesData } from "@/data";
 const About = () => {
   
   return (
-    <section id="Precios" className="relative py-12 px-4">
+    <section id="Precios" className="relative py-12 px-4 md:scroll-mt-0 scroll-mt-[160px]">
     <div className="container mx-auto">
-      <PageTitle section="Precios" />
+      <PageTitle section="PRECIOS" />
       <div className="mx-auto mt-8 mb-0 grid max-w-5xl grid-cols-2 gap-16 md:grid-cols-2 lg:grid-cols-2">
         {servicesData.map(({ title, price, icon }, index) => (
           
