@@ -85,7 +85,6 @@ const InstaEmbed = () => {
             width: '100%'
           }}
         >
-          View this post on Instagram
         </a>
       </blockquote>
     </InstagramEmbedWrapper>
