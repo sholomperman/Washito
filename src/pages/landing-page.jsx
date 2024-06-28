@@ -2,7 +2,7 @@ import React from 'react'
 import { Typography, Button } from "@material-tailwind/react";
 import './wave.css';
 import { whatsAppUrl } from '@/widgets/layout';
-import mainImg from '../../public/img/c-car.png'
+import mainImg from '../img/c-car.png'
 
 const LandingPage = () => {
   return (

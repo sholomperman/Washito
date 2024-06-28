@@ -9,6 +9,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import logo from '../../img/banner.png'
 
 export const whatsAppUrl = 'https://chat.whatsapp.com/BfChyyd6odkEvfH1YDSGjI'
 export function Navbar({ brandName, routes, action }) {
@@ -128,7 +129,7 @@ export function Navbar({ brandName, routes, action }) {
 }
 
 Navbar.defaultProps = {
-  brandName: <img width={250} alt="icon logo" src="/img/banner.png"/>, //washito-logo.png
+  brandName: <img width={250} alt="icon logo" src={logo}/>, //washito-logo.png
   // action: (
   //   <a
   //     href="https://www.creative-tim.com/product/material-tailwind-kit-react"
