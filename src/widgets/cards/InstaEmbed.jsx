@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import '../../../public/css/tailwind.css';
+import '../../tailwind.css';
 
 const InstagramEmbedWrapper = styled.div`
   .instagram-media {
@@ -85,7 +85,6 @@ const InstaEmbed = () => {
             width: '100%'
           }}
         >
-          View this post on Instagram
         </a>
       </blockquote>
     </InstagramEmbedWrapper>
