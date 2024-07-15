@@ -21,11 +21,10 @@ import "./tailwind.css";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Analytics>
-        <ThemeProvider>
-          <App />
-        </ThemeProvider>
-      </Analytics>
+      <ThemeProvider>
+        <Analytics />
+        <App />
+      </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
