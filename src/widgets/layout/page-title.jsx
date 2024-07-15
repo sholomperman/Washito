@@ -15,12 +15,6 @@ export function PageTitle({ section, heading, children }) {
   );
 }
 
-PageTitle.propTypes = {
-  section: PropTypes.string.isRequired,
-  heading: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-};
-
 PageTitle.displayName = "/src/widgets/layout/page-title.jsx";
 
 export default PageTitle;

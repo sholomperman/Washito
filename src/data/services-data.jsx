@@ -8,17 +8,17 @@ export const servicesData = [
   {
     title: "Hatchback",
     price: "11,990",
-    icon: (<img style={{width: '40px'}} src={hatchback}/>)
+    icon: (<img style={{width: '40px'}} alt="Hatchback Logo" src={hatchback}/>)
   },
   {
     title: "Sedan",
     price: "12,990",
-    icon: (<img style={{width: '40px'}} src={sedan}/>)
+    icon: (<img style={{width: '40px'}} alt="Sedan Logo" src={sedan}/>)
   },
   {
     title: "SUV",
     price: "15,990",
-    icon: (<img style={{width: '40px', height: '50px'}} src={SUV}/>)
+    icon: (<img style={{width: '40px', height: '50px'}} alt="SUV Logo" src={SUV}/>)
   },
   {
     title: "XL",

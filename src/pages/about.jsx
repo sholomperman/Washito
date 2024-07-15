@@ -24,10 +24,10 @@ const About = () => {
             <div className="mx-auto mb-6 grid h-14 w-14 place-items-center center rounded-full bg-blue-gray-900 shadow-lg shadow-gray-500/20">
               {icon}
             </div>
-            <Typography variant="p" className="text-txt_primary txt_p_font mb-2 text-xl font-semibold">
+            <Typography variant="h3" className="text-txt_primary txt_p_font mb-2 text-xl font-semibold">
               {title}
             </Typography>
-            <Typography variant="span" className="text-txt_secondary txt_s_font opacity-70 font-normal text-lg">
+            <Typography variant="h5" className="text-txt_secondary txt_s_font opacity-70 font-normal text-lg">
               ${price}
             </Typography>
           </Card>

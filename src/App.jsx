@@ -1,7 +1,6 @@
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { Navbar } from "@/widgets/layout";
 import routes, {nonViewRoutes} from "@/routes";
-import { Card, Typography, } from "@material-tailwind/react";
 import { ChatBubbleLeftRightIcon, } from "@heroicons/react/24/solid";
 import { whatsAppUrl } from '@/widgets/layout';
 
