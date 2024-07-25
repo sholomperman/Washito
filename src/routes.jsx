@@ -1,7 +1,7 @@
 import { Home, ComoLavar } from "@/pages";
-import TerminosDeUso from './pages/terminos-de-uso';// its not getting export from index.js for some reason
+import TerminosDeUso from './pages/terminos-de-uso';
+import Blog from './pages/blog';// its not getting export from index.js for some reason
 import FourHundredFour from "./pages/404";
-
 
 export const nonViewRoutes = [
   {
@@ -29,15 +29,15 @@ export const routes = [
     element: <Home />,
   },
   {
+    name: "Blog",
+    path: "/blog",
+    element: <Blog />,
+  },
+  {
     name: "Precios",
     href: "#Precios",
     element: '',
   },
-  // {
-  //   name: "Fundadores",
-  //   href: "#Fundadores",
-  //   element: '',
-  // },
   {
     name: "Acerca de",
     href: "#AcercaDe",
