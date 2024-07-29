@@ -1,8 +1,8 @@
 import React from 'react'
 import { Typography, Button } from "@material-tailwind/react";
 import './wave.css';
-import { whatsAppUrl } from '@/widgets/layout';
 import mainImg from '../img/c-car.png'
+import { whatsAppUrl1 } from '@/widgets/layout';
 
 const LandingPage = () => {
   return (
@@ -26,7 +26,7 @@ const LandingPage = () => {
       </div>
       <div className='md:w-1/2 w-full h-full bg-center bg-no-repeat relative flex items-center justify-center'>
           <img src={mainImg} className="absolute inset-0 w-full h-full object-contain" alt="Background main page" />
-          <a className='z-10' target="_blank" rel="noreferrer noopener" href={whatsAppUrl}>
+          <a className='z-10' target="_blank" rel="noreferrer noopener" href={whatsAppUrl1}>
             <Button className='bg-bg_secondary' size="lg text-txt_primary txt_p_font">¡Solicita tu lavado ahora!</Button>
           </a>
       </div>

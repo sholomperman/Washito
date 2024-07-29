@@ -6,17 +6,17 @@ import {
   Typography,
   Button
 } from "@material-tailwind/react";
-import { whatsAppUrl } from '@/widgets/layout';
 import { Footer } from "@/widgets/layout";
 import { Carousel } from "@material-tailwind/react";
 import { RocketLaunchIcon } from "@heroicons/react/24/solid";
 import About from "./about";
 import LandingPage from "./landing-page";
 import PageTitle from "../widgets/layout/page-title";
+import { whatsAppUrl2, whatsAppUrl3 } from '@/widgets/layout';
 
-function Btn ({txt}) {
+function Btn ({txt, href}) {
   return(
-    <a className='z-10' target="_blank" rel="noreferrer noopener" href={whatsAppUrl}>
+    <a className='z-10' target="_blank" rel="noreferrer noopener" href={href}>
       <Button className='bg-bg_secondary ' size="lg">{txt}</Button>
     </a>
   )
@@ -55,7 +55,7 @@ export function Home() {
         Solicita tu lavado con un clic y deja que nosotros nos encarguemos del resto.
         <br />
         <br />
-        <Btn txt='Agenda tu hora'/>
+        <Btn href={whatsAppUrl2} txt='Agenda tu hora'/>
         <br />
         <br />
         {/* secont part of page */}
@@ -95,8 +95,7 @@ export function Home() {
         garantizando que tu auto reciba el cuidado que se merece en cada lavado.
         <br />
         <br />
-        <Btn txt='Contactanos'/>
-
+        <Btn href={whatsAppUrl3} txt='Contactanos'/>
       </Typography>
     </div>
   <About/>
