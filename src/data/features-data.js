@@ -1,7 +1,7 @@
 import {
   ChatBubbleLeftRightIcon,
 } from "@heroicons/react/24/solid";
-import { whatsAppUrl } from '@/widgets/layout';
+import { whatsAppUrl1 } from '@/widgets/layout';
 
 export const featuresData = [
   {
@@ -9,7 +9,7 @@ export const featuresData = [
     title: "Chat de Washitos",
     text: "Obtén tu primer lavado aquí 👇",
     icon: ChatBubbleLeftRightIcon,
-    link: whatsAppUrl,
+    link: whatsAppUrl1,
   },
 
   // {

@@ -11,7 +11,11 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from '../../img/banner.png'
 
-export const whatsAppUrl = 'https://chat.whatsapp.com/BfChyyd6odkEvfH1YDSGjI'
+export const whatsAppUrl1 = 'https://wa.link/6v9s8c';
+export const whatsAppUrl2 = 'https://wa.link/zvv29r';
+export const whatsAppUrl3 = 'https://wa.link/nhe4e7';
+export const whatsAppUrl4 = 'https://wa.link/9coo7z';
+
 export function Navbar({ brandName, routes, action }) {
   const [openNav, setOpenNav] = React.useState(false);
   const { pathname } = useLocation();
@@ -79,7 +83,7 @@ export function Navbar({ brandName, routes, action }) {
         }
         <div className="hidden gap-2 lg:flex">
           <a
-            href={whatsAppUrl}
+            href={whatsAppUrl1}
             target="_blank"
             rel="noreferrer"
           >
@@ -110,7 +114,7 @@ export function Navbar({ brandName, routes, action }) {
            {!changeNavBg && navList}
           
           <a
-            href={whatsAppUrl}
+            href={whatsAppUrl1}
             target="_blank"
             className="m-2 block"
             rel="noreferrer"

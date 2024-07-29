@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Typography, IconButton } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
-import { whatsAppUrl } from '@/widgets/layout';
+import { whatsAppUrl1 } from '@/widgets/layout';
 import InstaEmbed from "../cards/InstaEmbed";
 
 const year = new Date().getFullYear();
@@ -112,7 +112,7 @@ Footer.defaultProps = {
       items: [
         { name: "washitocar@gmail.com", path: "mailto:washitocar@gmail.com" },
         // there is no phone num of W.A
-        { name: "Chat de Washito", path: whatsAppUrl }
+        { name: "Chat de Washito", path: whatsAppUrl1 }
       ],
     },
     // {
