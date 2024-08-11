@@ -14,11 +14,11 @@ export const nonViewRoutes = [
     path: "/terminos-y-condisiones",
     element: <TerminosDeUso />,
   },
-  {
-    name: "",
-    path: "/*",
-    element: <FourHundredFour />,
-  },
+  // {
+  //   name: "",
+  //   path: "/*",
+  //   element: <FourHundredFour />,
+  // },
 ]
 
 
