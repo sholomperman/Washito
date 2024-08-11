@@ -14,16 +14,11 @@ export const nonViewRoutes = [
     path: "/terminos-y-condisiones",
     element: <TerminosDeUso />,
   },
-  {
-    name: "",
-    path: "/*",
-    element: <FourHundredFour />,
-  },
-  {
-    name: "",
-    path: "/zohoverify/verifyforzoho.html",
-    element: <></>,
-  },
+  // {
+  //   name: "",
+  //   path: "/*",
+  //   element: <FourHundredFour />,
+  // },
 ]
 
 
