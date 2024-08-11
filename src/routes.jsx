@@ -19,6 +19,11 @@ export const nonViewRoutes = [
     path: "/*",
     element: <FourHundredFour />,
   },
+  {
+    name: "",
+    path: "/zohoverify/verifyforzoho.html",
+    element: <></>,
+  },
 ]
 
 
