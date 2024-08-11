@@ -28,11 +28,11 @@ export const routes = [
     path: "/",
     element: <Home />,
   },
-  {
-    name: "Blog",
-    path: "/blog",
-    element: <Blog />,
-  },
+  // {
+  //   name: "Blog",
+  //   path: "/blog",
+  //   element: <Blog />,
+  // },
   {
     name: "Precios",
     href: "#Precios",
