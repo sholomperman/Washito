@@ -110,7 +110,7 @@ Footer.defaultProps = {
     {
       name: "Otros recursos",
       items: [
-        { name: "washitocar@gmail.com", path: "mailto:washitocar@gmail.com" },
+        { name: "admin@washito.cl", path: "mailto:admin@washito.cl" },
         // there is no phone num of W.A
         { name: "Chat de Washito", path: whatsAppUrl1 }
       ],
