@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node -e \"console.time('Build Time'); require('child_process').execSync('vite build', {stdio: 'inherit'}); console.timeEnd('Build Time');\"",
     "preview": "vite preview"
   },
   "dependencies": {

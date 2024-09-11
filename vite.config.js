@@ -6,4 +6,7 @@ export default defineConfig({
   resolve: {
     alias: [{ find: "@", replacement: "/src" }],
   },
+  build: {
+    chunkSizeWarningLimit: 1000, // Raise the limit to 1000 kB
+  },
 });
