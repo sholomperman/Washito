@@ -8,7 +8,12 @@ const SignUpPopup = () => {
   const [loading, setLoading] = useState(false); // To track loading state
 
   useEffect(() => {
-    setOpen(true);
+    const timer = setTimeout(() => {
+      setOpen(true);
+    }, 15000); // 10 seconds delay
+
+    // Cleanup timer on component unmount
+    return () => clearTimeout(timer);
   }, []);
 
 
