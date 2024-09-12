@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { Typography } from "@material-tailwind/react";
 
 export function PageTitle({ section, heading, children }) {
