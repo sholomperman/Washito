@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Dialog, Input, Button, Spinner } from "@material-tailwind/react";
 
+
 const SignUpPopup = () => {
   const [open, setOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false); // To track if the form is submitted
@@ -9,6 +10,7 @@ const SignUpPopup = () => {
   useEffect(() => {
     setOpen(true);
   }, []);
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -51,7 +53,7 @@ const SignUpPopup = () => {
   return (
     <>
       <Dialog open={open} handler={() => setOpen(false)} size="lg">
-        <div className="p-6">
+        <div className="p-6 relative">
           {!submitted ? (
             loading ? (
               <div className="flex flex-col items-center">
@@ -59,7 +61,8 @@ const SignUpPopup = () => {
                 <p className="mt-4 text-txt_primary">Submitting...</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit}>
+              <form  onSubmit={handleSubmit}>
+                <span onClick={()=>setOpen(false)} className="text-2xl text-orange-800 font-semibold absolute top-0 right-0 py-2 px-4 cursor-pointer">X</span>
                 <h3 className="text-xl font-semibold mb-4 text-txt_primary">¡Únete a Washito!</h3>
 
                 <div className="mb-4">
