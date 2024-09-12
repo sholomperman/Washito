@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Dialog, Input, Button } from "@material-tailwind/react";
+import { Dialog, Input, Button, Spinner } from "@material-tailwind/react";
 
 const SignUpPopup = () => {
   const [open, setOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false); // To track if the form is submitted
+  const [loading, setLoading] = useState(false); // To track loading state
 
   useEffect(() => {
     setOpen(true);
@@ -11,7 +12,8 @@ const SignUpPopup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+    setLoading(true); // Start loading
+
     const apiKey = 'https://script.google.com/macros/s/AKfycbwwV-bDK27O28v--yIRywgrVFw-R8FgXf4hOY6odGjWaxmztC8SToOvYOg8FBn7EuR4wA/exec';
     const formData = new FormData(e.target);
     const name = formData.get('name');
@@ -41,6 +43,8 @@ const SignUpPopup = () => {
       }
     } catch (error) {
       console.error("Form submission error:", error);
+    } finally {
+      setLoading(false); // Stop loading
     }
   };
 
@@ -49,21 +53,28 @@ const SignUpPopup = () => {
       <Dialog open={open} handler={() => setOpen(false)} size="lg">
         <div className="p-6">
           {!submitted ? (
-            <form onSubmit={handleSubmit}>
-              <h3 className="text-xl font-semibold mb-4 text-txt_primary">¡Únete a Washito!</h3>
+            loading ? (
+              <div className="flex flex-col items-center">
+                <Spinner className="text-bg_secondary" />
+                <p className="mt-4 text-txt_primary">Submitting...</p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit}>
+                <h3 className="text-xl font-semibold mb-4 text-txt_primary">¡Únete a Washito!</h3>
 
-              <div className="mb-4">
-                <Input type="text" name="name" label="Nombre Completo" required />
-              </div>
-              <div className="mb-4">
-                <Input type="email" name="email" label="Correo Electronico" required />
-              </div>
-              <div className="mb-4">
-                <Input type="tel" name="phone" label="Numbero" required />
-              </div>
+                <div className="mb-4">
+                  <Input type="text" name="name" label="Nombre Completo" required />
+                </div>
+                <div className="mb-4">
+                  <Input type="email" name="email" label="Correo Electronico" required />
+                </div>
+                <div className="mb-4">
+                  <Input type="tel" name="phone" label="Número" required />
+                </div>
 
-              <Button type="submit" className="mt-4 bg-bg_secondary">Enviar</Button>
-            </form>
+                <Button type="submit" className="mt-4 bg-bg_secondary">Enviar</Button>
+              </form>
+            )
           ) : (
             // Success message after form submission
             <div className="text-center">

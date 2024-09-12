@@ -3,7 +3,7 @@ import { Navbar } from "@/widgets/layout";
 import routes, {nonViewRoutes} from "@/routes";
 import { ChatBubbleLeftRightIcon, } from "@heroicons/react/24/solid";
 import { whatsAppUrl4 } from '@/widgets/layout';
-import PopUp from './widgets/cards/popUp'
+import PopUp from './widgets/cards/popUp';
 
 function App() {
   return (
