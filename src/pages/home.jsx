@@ -100,7 +100,7 @@ export function Home() {
           </Typography>
         </div>
         <About />
-        <SubscriptionPopover />
+        {/* <SubscriptionPopover /> */}
       </section>
       <Footer />
     </>
