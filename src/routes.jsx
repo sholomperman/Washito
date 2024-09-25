@@ -37,6 +37,11 @@ export const routes = [
     href: "#AcercaDe",
     element: '',
   },
+  {
+    name: "Contact",
+    href: "#Contact",
+    element: '',
+  },
 ];
 
 export default routes;

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Dialog, Input, Button, Spinner } from "@material-tailwind/react";
 
 
-const SignUpPopup = () => {
+export const SignUpPopup = () => {
   const [open, setOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false); // To track if the form is submitted
   const [loading, setLoading] = useState(false); // To track loading state
@@ -10,7 +10,7 @@ const SignUpPopup = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setOpen(true);
-    }, 15000); // 10 seconds delay
+    }, 15000); // 15 seconds delay
 
     // Cleanup timer on component unmount
     return () => clearTimeout(timer);
@@ -54,7 +54,6 @@ const SignUpPopup = () => {
       setLoading(false); // Stop loading
     }
   };
-
   return (
     <>
       <Dialog open={open} handler={() => setOpen(false)} size="lg">
