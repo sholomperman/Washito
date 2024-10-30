@@ -10,7 +10,7 @@ export const SignUpPopup = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setOpen(true);
-    }, 15000); // 15 seconds delay
+    }, 2000); // 2 seconds delay
 
     // Cleanup timer on component unmount
     return () => clearTimeout(timer);
@@ -45,6 +45,7 @@ export const SignUpPopup = () => {
 
       if (response.ok) {
         setSubmitted(true); // Show success message
+
       } else {
         console.log("Error submitting the form");
       }
@@ -67,7 +68,7 @@ export const SignUpPopup = () => {
             ) : (
               <form  onSubmit={handleSubmit}>
                 <span onClick={()=>setOpen(false)} className="text-2xl text-orange-800 font-semibold absolute top-0 right-0 py-2 px-4 cursor-pointer">X</span>
-                <h3 className="text-xl font-semibold mb-4 text-txt_primary">¡Únete a Washito!</h3>
+                <h3 className="text-xl font-semibold mb-4 text-txt_primary">¡Únete a Washito! <span className='text-txt_red'>Oferta de <span className='italic'>30%</span></span> </h3>
 
                 <div className="mb-4">
                   <Input type="text" name="name" label="Nombre Completo" required />
