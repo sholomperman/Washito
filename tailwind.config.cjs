@@ -11,8 +11,8 @@ module.exports = withMT({
         txt_primary: '#86c129',
         txt_secondary: '#003393',
         white: '#ffffff',
+        txt_red: '#e05555'
         
-
         // bgprimary>#899dc9
         // bgsecondary>#0081e9
         // txtprimary> #86c129
