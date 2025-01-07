@@ -12,12 +12,12 @@ export const servicesData = [
   },
   {
     title: "Sedan",
-    price: "14.500",
+    price: "14.490",
     icon: (<img style={{width: '40px'}} alt="Sedan Logo" src={sedan}/>)
   },
   {
     title: "SUV",
-    price: "14.990",
+    price: "15.490",
     icon: (<img style={{width: '40px', height: '50px'}} alt="SUV Logo" src={SUV}/>)
   },
   {
