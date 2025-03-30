@@ -13,12 +13,12 @@ import { PageTitle } from "@/widgets/layout";
 import { services } from "@/data";
 
 const About = () => {
-  const [position, setPosition] = useState(0)
+  const [position, setPosition] = useState(1)
   return (
   <section id="Precios" className="relative py-12 px-4 md:scroll-mt-0 scroll-mt-[160px]">
     <div className="container mx-auto">
       <PageTitle section="PRECIOS" />
-      <Tabs style={{maxWidth: '400px', margin: '0 auto'}} value={services[1].title}>
+      <Tabs style={{maxWidth: '400px', margin: '0 auto'}} value={services[position].title}>
         <TabsHeader className="bg-bg_secondary">
           {services.map((i, index) => (
             <Tab className="h-100" onClick={()=>setPosition(index)} key={index} value={i.title}>
